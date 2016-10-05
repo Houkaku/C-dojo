@@ -1,4 +1,4 @@
-<?php
+﻿<?php
 if(isset($_POST["answer"])){
 
 	$answer=$_POST["answer"];
@@ -18,8 +18,7 @@ $Kaitou = system($_path .' & cd /d C:\xampp\htdocs & '.$_POST["mon"].'.exe');
 system($_path .' & cd /d C:\xampp\htdocs & bcc32 eCmo'.$_POST["mon"].'.c');
 $Sample = system($_path .' & cd /d C:\xampp\htdocs & eCmo'.$_POST["mon"].'.exe');
 
-<form action="saitenn.php" method="post">
 
-header('Location: http://localhost/Cmon'.$_POST["mon"].'.php');
-exit;
+//header('Location: http://localhost/Cmon'.$_POST["mon"].'.php');
+//exit;
 ?>

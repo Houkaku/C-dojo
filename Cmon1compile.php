@@ -6,19 +6,29 @@ if(isset($_POST["answer"])){
 
 }
 
-//system('set PATH=Z:\プログラミング技術\borland\bcc55\Bin;C:\ProgramData\Oracle\Java\javapath;C:\PROGRA~1\COMMON~1\MICROS~1\WINDOW~1;C:\PROGRA~2\COMMON~1\MICROS~1\WINDOW~1;C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\PROGRA~2\WIC4A1~1\Shared;C:\PROGRA~1\Intel\INTEL(~1\DAL;C:\PROGRA~1\Intel\INTEL(~1\IPT;C:\PROGRA~2\Intel\INTEL(~1\DAL;C:\PROGRA~2\Intel\INTEL(~1\IPT');
-//system('cd プログラミング技術');
-//system('bcc32 E-21.c');
+$_path = 'set PATH='.__DIR__.'\borland\bcc55\Bin;';
+$_cd   = 'cd /d C:\xampp\htdocs';
+$_bcc = 'bcc32 '.$_POST["mon"].'.c';
 
-$_path = 'set PATH=Z:\プログラミング技術\borland\bcc55\Bin;C:\ProgramData\Oracle\Java\javapath;C:\PROGRA~1\COMMON~1\MICROS~1\WINDOW~1;C:\PROGRA~2\COMMON~1\MICROS~1\WINDOW~1;C:\Windows\System32;C:\Windows;C:\Windows\System32\wbem;C:\PROGRA~2\WIC4A1~1\Shared;C:\PROGRA~1\Intel\INTEL(~1\DAL;C:\PROGRA~1\Intel\INTEL(~1\IPT;C:\PROGRA~2\Intel\INTEL(~1\DAL;C:\PROGRA~2\Intel\INTEL(~1\IPT';
+$_com = $_path . ' & ' . $_cd . ' & ' . $_bcc;
 
-system($_path .' & cd /d C:\xampp\htdocs & bcc32 '.$_POST["mon"].'.c');
-$Kaitou = system($_path .' & cd /d C:\xampp\htdocs & '.$_POST["mon"].'.exe');
+system($_com);
+$Kaitou = system($_POST["mon"].'.exe');
 
-system($_path .' & cd /d C:\xampp\htdocs & bcc32 eCmo'.$_POST["mon"].'.c');
-$Sample = system($_path .' & cd /d C:\xampp\htdocs & eCmo'.$_POST["mon"].'.exe');
+$Sample = system('0'.$_POST["mon"].'.exe');
 
+if($Kaitou == $Sample)
+{
+	setcookie('a','正解');
+}
+else
+{
+	setcookie('a',"不正解");
+}
 
-//header('Location: http://localhost/Cmon'.$_POST["mon"].'.php');
-//exit;
+//system('del '.$_POST["mon"].'.exe');
+//system('del '.$_POST["mon"].'.tds');
+//system('del '.$_POST["mon"].'.obj');
+header('Location: http://localhost/Cmon'.$_POST["mon"].'.php');
+exit;
 ?>

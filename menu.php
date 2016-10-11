@@ -6,22 +6,38 @@
 <meta http-equiv="Content-Style-Type" content="text/css">
 <meta http-equiv="Content-Script-Type" content="text/javascript">
 
-<title>ƒƒjƒ…[</title>
+<title>ãƒ¡ãƒ‹ãƒ¥ãƒ¼</title>
 
-<script type="text/javascript" language="JavaScript" src="../../js/roller.js"></script>
-<script type="text/javascript" language="JavaScript" src="../../js/jump1.js"></script>
+<link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
+<link rel="stylesheet" type="text/css" href="css/bootstrap-material-design.css">
+<link rel="stylesheet" type="text/css" href="css/ripples.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
+
+<script type="text/javascript" src="js/jquery.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.min.js"></script>
+<script type="text/javascript" src="js/material.min.js"></script>
+<script type="text/javascript" src="js/ripples.min.js"></script>
+
+
 </head>
 
 <body>
-<p>@@@@@@@@@@@@@@@@@@@@“ïˆÕ“x</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>@@@<a href="http://localhost/Cmon1.php">’á</a>@@@@@@@@@@@@@@@@@’†@@@@@@@@@@@@@@@@@@@@‚</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>&nbsp;</p>
-<p>ƒƒOƒAƒEƒg@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@@‰ß‹Ž‚Ì¬Ñ</p>
+<h1>é›£æ˜“åº¦</h1>
+<div class="btn-group btn-group-raised difficulty">
+    <a class="btn btn-info" href="Cmon1.php">ä½Ž</a>
+    <a class="btn btn-success" href="#">ä¸­</a>
+    <a class="btn btn-warning" href="#">é«˜</a>
+</div>
+
+<table>
+    <tr>
+        <td><a class="btn btn-raised btn-warning" href="login.php">ãƒ­ã‚°ã‚¢ã‚¦ãƒˆ</a></td>
+    </tr>
+</table>
+<!--
+<p><a href="login.php">ãƒ­ã‚°ã‚¢ã‚¦ãƒˆ</a>
+éŽåŽ»ã®æˆç¸¾</p>
+-->
+
 </body>
 </html>

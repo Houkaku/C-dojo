@@ -19,16 +19,13 @@ $Sample = system('0'.$_POST["mon"].'.exe');
 
 if($Kaitou == $Sample)
 {
-	setcookie('a','正解');
+	setcookie('mon'.$_POST["mon"],'正解');
 }
 else
 {
-	setcookie('a',"不正解");
+	setcookie('mon'.$_POST["mon"],"不正解");
 }
 
-//system('del '.$_POST["mon"].'.exe');
-//system('del '.$_POST["mon"].'.tds');
-//system('del '.$_POST["mon"].'.obj');
 header('Location: http://localhost/Cmon'.$_POST["mon"].'.php');
 exit;
 ?>

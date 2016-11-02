@@ -1,20 +1,6 @@
-﻿<html>
-
-<head>
-<?php
+﻿<?php
 $title = '問題1';
+$monText = "３+５の計算をし、答えを表示するプログラムを作成しなさい。";
 $monNum = 1;
-include( "Cmonhead.php" );
+include( "Cmon.php" );
 ?>
-</head>
-
-<body>
-<?php include("body.php"); ?>
-<?php
-require("Cmon.php");
-echo mon1;
-?>
-<?php include("form.php"); ?>
-</body>
-
-</html>

@@ -1,11 +1,13 @@
+<html>
+<head></head>
+<body>
 <?php
-require 'users.php';
-
+$users = array("towa"=>"55501","houkaku" => "5501");
 $userid = $_POST["username"];
-//echo $userid;
+echo $userid;
 
 $passward = $_POST["Passward"];
-//echo $passward;
+echo $passward;
 
 if(isset($users[$userid]) && $users[$userid]==$passward){
     //print($users['towa']);

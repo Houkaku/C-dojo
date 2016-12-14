@@ -1,7 +1,7 @@
 <?php
 require 'users.php';
 
-$userid = $_POST["username"];
+$userid = $_POST["UserID"];
 //echo $userid;
 
 $passward = $_POST["Passward"];
@@ -10,13 +10,13 @@ $passward = $_POST["Passward"];
 if(isset($users[$userid]) && $users[$userid]==$passward){
     //print($users['towa']);
 	session_start();
-	$_SESSION['count'] = "roguinnsitorude";
+	$_SESSION['count'] = "login";
 }else{
     session_start();
-	$_SESSION['count'] = "roguinndekitenaide";
+	$_SESSION['count'] = "notlogin";
 }
 echo $_SESSION['count'];
-header('Location: http://localhost/Login.php');
+header('Location: http://localhost/usertest/Login.php');
 exit;
 ?>
 </body>

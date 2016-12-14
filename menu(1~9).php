@@ -19,7 +19,7 @@
 .center1{
     font-size:500%;
     text-align: center;
-    line-height:110px;
+    line-height:100px;
     margin-top:0px;
     margin-right:100px;
     margin-left:100px;
@@ -50,6 +50,9 @@
     padding-bottom:10px;
 }
 
+.font{
+    font-size:120%;
+}
 </style>
 <title>メニュー</title>
 </head>
@@ -64,32 +67,28 @@
     <div class="btn-group btn-group-raised difficulty">
     <table>
     <tr>
-      <td><a class="btn btn-dif btn-info" href="Cmon1.php"><font size="10">1</a></td>
-      <td><a class="btn btn-dif btn-info" href="Cmon1.php"><font size="10">2</a></td>
-      <td><a class="btn btn-dif btn-info" href="Cmon1.php"><font size="10">3</a></td>
+      <td><a class="btn btn-dif btn-info font" href="Cmon1.php">1</a></td>
+      <td><a class="btn btn-dif btn-info font" href="Cmon1.php">2</a></td>
+      <td><a class="btn btn-dif btn-info font" href="Cmon1.php">3</a></td>
     </tr>
     <tr>
-      <td><a class="btn btn-dif btn-success" href="Cmon2.php"><font size="10">4</a></td>
-      <td><a class="btn btn-dif btn-success" href="Cmon2.php"><font size="10">5</a></td>
-      <td><a class="btn btn-dif btn-success" href="Cmon2.php"><font size="10">6</a></td>
+      <td><a class="btn btn-dif btn-success font" href="Cmon2.php">4</a></td>
+      <td><a class="btn btn-dif btn-success font" href="Cmon2.php">5</a></td>
+      <td><a class="btn btn-dif btn-success font" href="Cmon2.php">6</a></td>
     </tr>
     <tr>
-      <td><a class="btn btn-dif btn-warning" href="Cmon3.php"><font size="10">7</a></td>
-      <td><a class="btn btn-dif btn-warning" href="Cmon3.php"><font size="10">8</a></td>
-      <td><a class="btn btn-dif btn-warning" href="Cmon3.php"><font size="10">9</a></td>
+      <td><a class="btn btn-dif btn-warning font" href="Cmon3.php">7</a></td>
+      <td><a class="btn btn-dif btn-warning font" href="Cmon3.php">8</a></td>
+      <td><a class="btn btn-dif btn-warning font" href="Cmon3.php">9</a></td>
     </tr>
     </table>
     </div>
 </div>
 
 <div class="center2" style="margin-top: 50px;">
-<a class="btn btn-raised btn-warning" href="login.php"><font size="8">ログアウト</a>
+<a class="btn btn-raised btn-warning font" href="login.php">ログアウト</a>
 </div>
 
-<!--
-<p><a href="login.php">ログアウト</a>
-過去の成績</p>
--->
 
 </body>
 </html>

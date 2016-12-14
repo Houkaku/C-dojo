@@ -40,7 +40,7 @@ body{
 <div class="center2">
 <p>ユーザーID：<input type="text" onfocus="placeholders()"  id="placeholder" />
 <p>パスワード ：<input type="text" onfocus="placeholders()"  id="placeholder" />
-<p><a class="btn btn-info" href="aaa.php"><font size="5">ログイン</a>
+<p><a class="btn btn-info" href="aaa.php">ログイン</a>
 <p><a href="http://localhost/shinki.php">アカウントをお持ちでない方はこちら</a>
 <p><a href="#">パスワードを忘れた方はこちら</a> 
 </div>

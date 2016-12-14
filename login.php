@@ -38,11 +38,12 @@ body{
 </div>
 
 <div class="center2">
-<p>ユーザーID：<input type="text" onfocus="placeholders()"  id="placeholder" />
-<p>パスワード ：<input type="text" onfocus="placeholders()"  id="placeholder" />
-<p><a class="btn btn-info" href="aaa.php"><font size="5">ログイン</a>
+<form method="POST" action="ninsho.php">
+<p>ユーザーID：<input type="text" name="userID" onfocus="placeholders()"  id="placeholder" />
+<p>パスワード ：<input type="text" name="Passward" onfocus="placeholders()"  id="placeholder" />
+<p><input type="submit" class="btn btn-info" href="aaa.php"><font size="5">ログイン</a>
 <p><a href="http://localhost/shinki.php">アカウントをお持ちでない方はこちら</a>
-<p><a href="#">パスワードを忘れた方はこちら</a> 
+<p><a href="#">パスワードを忘れた方はこちら</a>
 </div>
 
 </body>

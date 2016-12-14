@@ -18,7 +18,6 @@
 body{ 
   background-color:#dddddd;
 }
-
 .center1{
     margin-top:100px;
     text-align:center;
@@ -27,25 +26,19 @@ body{
 .center2{
     text-align:center;
     font-size:200%;
-
 </style>
 <title>ログイン</title>
 </head>
-
 <body>
 <div  class="center1">
 <p>ログイン画面
 </div>
-
 <div class="center2">
-<form method="POST" action="ninsho.php">
-<p>ユーザーID：<input type="text" name="userID" onfocus="placeholders()"  id="placeholder" />
-<p>パスワード ：<input type="text" name="Passward" onfocus="placeholders()"  id="placeholder" />
-<p><input type="submit" class="btn btn-info" href="aaa.php"><font size="5">ログイン</a>
+<p>ユーザーID：<input type="text" onfocus="placeholders()"  id="placeholder" />
+<p>パスワード ：<input type="text" onfocus="placeholders()"  id="placeholder" />
+<p><a class="btn btn-info" href="aaa.php">ログイン</a>
 <p><a href="http://localhost/shinki.php">アカウントをお持ちでない方はこちら</a>
-<p><a href="#">パスワードを忘れた方はこちら</a>
+<p><a href="#">パスワードを忘れた方はこちら</a> 
 </div>
-
-
 </body>
 </html>

@@ -39,6 +39,10 @@ body{
   background-color:#dddddd;
 }
 
+.font{
+  font-size:200%;
+}
+
 </style>
 
 <title><?php echo $title; ?></title>

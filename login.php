@@ -40,5 +40,6 @@ body{
 <p><a href="http://localhost/shinki.php">アカウントをお持ちでない方はこちら</a>
 <p><a href="#">パスワードを忘れた方はこちら</a> 
 </div>
+
 </body>
 </html>

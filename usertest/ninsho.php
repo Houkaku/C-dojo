@@ -16,7 +16,7 @@ if(isset($users[$userid]) && $users[$userid]==$passward){
 	$_SESSION['count'] = "notlogin";
 }
 echo $_SESSION['count'];
-header('Location: http://localhost/usertest/Login.php');
+header('Location: ./usertest/Login.php');
 exit;
 ?>
 </body>

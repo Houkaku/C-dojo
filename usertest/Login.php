@@ -52,7 +52,7 @@ $count = isset($_SESSION['count']) ? $_SESSION['count'] : "notlogin";
 echo $count;
 
 if($count=="login"){
-	header('Location: http://localhost/menu.php');
+	header('Location: ./menu.php');
 	exit;}
 	else{
 	print("ログイン失敗");}

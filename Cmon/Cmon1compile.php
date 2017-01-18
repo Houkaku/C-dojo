@@ -2,7 +2,7 @@
 if(isset($_POST["answer"])){
 
 	$answer=$_POST["answer"];
-	file_put_contents($_POST["mon"].".c",$answer);
+	file_put_contents('./'$_POST["mon"].".c",$answer);
 
 }
 
@@ -17,6 +17,7 @@ $Kaitou = system($_POST["mon"].'.exe');
 
 $Sample = system('0'.$_POST["mon"].'.exe');
 
+
 if($Kaitou == $Sample)
 {
 	setcookie('mon'.$_POST["mon"],'正解');
@@ -26,6 +27,6 @@ else
 	setcookie('mon'.$_POST["mon"],"不正解");
 }
 
-header('Location: http://localhost/Cmon'.$_POST["mon"].'.php');
+header('Location: Cmon'.$_POST["mon"].'.php');
 exit;
 ?>

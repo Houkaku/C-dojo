@@ -3,6 +3,10 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="cache-control" content="no-cache" />
+<meta http-equiv="expires" content="0" />
+
 <link rel="stylesheet" type="text/css" href="css/bootstrap.min.css">
 <link rel="stylesheet" type="text/css" href="css/bootstrap-material-design.css">
 <link rel="stylesheet" type="text/css" href="css/ripples.css">
@@ -37,10 +41,6 @@ text-aling:center;
 
 body{ 
   background-color:#dddddd;
-}
-
-.font{
-  font-size:200%;
 }
 
 </style>

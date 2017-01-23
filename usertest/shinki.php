@@ -15,46 +15,45 @@
 <script type="text/javascript" src="js/ripples.min.js"></script>
 
 <style>
+
 body{ 
   background-color:#dddddd;
 }
+
 .center1{
     margin-top:100px;
     text-align:center;
     font-size:300%;
+
 }
+
 .center2{
     text-align:center;
     font-size:200%;
+}
+
+.font{
+    font-size:100%;
+}
 </style>
-<title>ログイン</title>
+<title>新規登録</title>
 </head>
 
 <body>
-<div  class="center1">
-<p>ログイン画面
+
+<div class="center1">
+    新規登録<br>
 </div>
+
 <div class="center2">
-<form method="POST" action="ninsho.php">
-<p>ユーザーID：<input type="text" name="UserID" onfocus="placeholders()"  id="placeholder" />
-<p>パスワード ：<input type="text" name="Passward" onfocus="placeholders()"  id="placeholder" />
-<p><input type="submit" name="btn1" class="btn btn-info" value="ログイン">
-<p><a href="http://localhost/Cmon/shinki.php">アカウントをお持ちでない方はこちら</a>
-<p><a href="#">パスワードを忘れた方はこちら</a>
 
+<form method="POST" action="tuika.php">
+ユーザーID：<input type="text" name="userid" onfocus"placeholders()" id="placeholder" />
+<p>パスワード：<input type="text" name="userpass" onfocus"placeholders()" id="placeholder" />
+<p>パスワード再入力：<input type="text" onfocus"placeholders()" id="placeholder" />
+<p><input type="submit" class="btn btn-info font" name="btn1" value="アカウント作成">
+<p><a href="http://localhost/login.php">ログイン画面</a>
+</form>
 </div>
 
-<?php
-session_start();
-
-$count = isset($_SESSION['count']) ? $_SESSION['count'] : "notlogin";
-
-if($count=="login"){
-	header('Location: http://localhost/Cmon/menu.php');
-	exit;}
-	else{
-	print("ログイン失敗");}
-?>
-</form>
 </body>
-</html>

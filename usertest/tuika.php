@@ -1,5 +1,5 @@
 <?php
-require './users.php';
+require 'users.php';
 
 $newuser_id = $_POST["userid"];
 $newuser_pass = $_POST["userpass"];
@@ -10,5 +10,5 @@ $txt = '<?php $users = '.
        var_export($users, true) .
        '; ?>';
 
-file_put_contents('./users.php', $txt);
+file_put_contents('users.php', $txt);
 ?>
